@@ -1,4 +1,4 @@
 public class Main{
   public static void main(String[]args){
-    System.out.println("Ingrese su sintoma enfermedad"); 
-    
+    System.out.print("Ingrese su sintoma"); 
+    System.out.println("Ingrese su enfermedad"); 
