@@ -8,17 +8,16 @@ public class ReseñaFront extends JPanel {
     private JLabel jcomp1;
     private JButton jcomp2;
     private JButton jcompGuardar;
-    private JButton jcompVerReseñas; // Nuevo botón para ver reseñas
+    private JButton jcompVerReseñas; 
     private JTextField jcomp3;
     private JLabel jcomp4;
     private JTextField jcomp5;
     private Reseña reseña;
 
     public ReseñaFront(JFrame frame) {
-        // Crear la instancia de Reseña
+       
+        //Crear
         reseña = new Reseña();
-
-        // Crear componentes
         jcomp1 = new JLabel(Idioma.getTexto(8)); //"NOMBRE" o "NAME"
         jcomp2 = new JButton(Idioma.getTexto(7)); //"ATRAS" o "BACK"
         jcompGuardar = new JButton(Idioma.getTexto(10)); //"GUARDAR RESEÑA" o "SAFE REVIEW"
@@ -88,7 +87,7 @@ public class ReseñaFront extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 // Obtener la lista de reseñas y mostrarla
                 StringBuilder reseñasTexto = new StringBuilder();
-                for (Reseña.Datos reseña : reseña.obtenerReseñas()) {
+                for (Reseña reseña : reseña.obtenerReseñas()) {
                     reseñasTexto.append(reseña.toString()).append("\n");
                 }
 
